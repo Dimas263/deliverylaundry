@@ -9,7 +9,7 @@ Delivery Loundry adalah usaha loundry melayani cucian rumah tangga, karpet, bone
 - [Brigita Creator](https://github.com/brigittaps-creator)
 
 ## Aplikasi
-<img src="document/demo/deliverylaundry.gif" alt="alt text" width="200"/>
+<img src="document/demo/deliveryloundry.gif" alt="alt text" width="200"/>
 
 ## Tampilan Aplikasi
 .
