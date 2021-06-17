@@ -140,7 +140,7 @@ class _profilviewState extends State<profilview> {
                     Text(
                       '(${_user.email!})',
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Colors.deepPurple,
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
@@ -155,7 +155,7 @@ class _profilviewState extends State<profilview> {
                         : ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                          Colors.blue,
+                          Colors.deepPurple,
                         ),
                         shape: MaterialStateProperty.all(
                           RoundedRectangleBorder(

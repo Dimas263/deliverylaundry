@@ -57,13 +57,13 @@ class _daftarmenuState extends State<daftarmenu> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepPurple,
         actions: [
           Padding(
             padding: EdgeInsets.all(10.0),
             child: Container(
               margin: EdgeInsets.only(right: 10.0),
-              color: Colors.blue,
+              color: Colors.deepPurple,
               child: InkWell(
                 onTap: () async {
                   setState(() {
@@ -103,7 +103,7 @@ class _daftarmenuState extends State<daftarmenu> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                     child: InkWell(
                       splashColor: Colors.red,
                       borderRadius: BorderRadius.circular(15),
@@ -136,7 +136,7 @@ class _daftarmenuState extends State<daftarmenu> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                     child: InkWell(
                       splashColor: Colors.red,
                       borderRadius: BorderRadius.circular(15),
@@ -169,7 +169,7 @@ class _daftarmenuState extends State<daftarmenu> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                     child: InkWell(
                       splashColor: Colors.red,
                       borderRadius: BorderRadius.circular(15),
@@ -202,7 +202,7 @@ class _daftarmenuState extends State<daftarmenu> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                     child: InkWell(
                       splashColor: Colors.red,
                       borderRadius: BorderRadius.circular(15),

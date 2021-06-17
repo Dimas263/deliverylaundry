@@ -35,11 +35,11 @@ class loginview extends StatelessWidget {
                       Flexible(
                           flex: 1,
                           child: CircleAvatar(
-                            backgroundColor: Colors.white.withOpacity(0.1),
-                            radius: 75,
+                            backgroundColor: Colors.white,
+                            radius: 100,
                             child: Image.asset(
                               'file/logo.png',
-                              height: 160,
+                              height: 300,
                             ),
                           )
                       ),

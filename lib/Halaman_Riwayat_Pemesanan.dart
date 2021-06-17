@@ -61,7 +61,7 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Colors.deepPurple,
                   ),
                 );
               }
@@ -109,7 +109,7 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blue,
+                                color: Colors.deepPurple,
                               ),
                             ),
                           ),
@@ -291,7 +291,7 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
               return Center(
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    Colors.blue,
+                    Colors.deepPurple,
                   ),
                 ),
               );
@@ -303,7 +303,7 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
         onPressed: () {
           Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, duration: Duration(seconds: 1), child: pemesananview()));
         },
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepPurple,
         child: Icon(
           Icons.add,
           color: Colors.white,

@@ -72,7 +72,7 @@ class pemesananview extends StatelessWidget {
                       child: Text(
                         'Aturan Pemesanan',
                         style: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.deepPurple,
                             fontWeight: FontWeight.bold,
                             fontSize: 18
                         ),
@@ -85,19 +85,19 @@ class pemesananview extends StatelessWidget {
                         children: [
                           ListTile(
                             leading: Text('1'),
-                            title: Text('abc'),
+                            title: Text('Laundry hanya menerima barang dengan total berat < 10kg'),
                           ),
                           ListTile(
                             leading: Text('2'),
-                            title: Text('abc'),
+                            title: Text('Harga laundry per kg adalah Rp. 6000'),
                           ),
                           ListTile(
                             leading: Text('3'),
-                            title: Text('abc'),
+                            title: Text('Waktu pengerjaan untuk barang < 5 kg adalah 2 hari, sedangkan untuk <10 kg adalah 4 hari, selain itu tidak menerima pesanan'),
                           ),
                           ListTile(
                             leading: Text('4'),
-                            title: Text('abc'),
+                            title: Text('Metode pembayaran adalah bayar ditempat pada saat barang selesai dicuci'),
                           ),
                         ],
                       ),
@@ -265,7 +265,7 @@ class pemesananview extends StatelessWidget {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                        color: Colors.blue,
+                        color: Colors.deepPurple,
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
                             var total_berat_int = int.parse(total_berat.text);
@@ -286,7 +286,7 @@ class pemesananview extends StatelessWidget {
                                           title: Text(
                                             'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
                                             style: TextStyle(
-                                                color: Colors.blue,
+                                                color: Colors.deepPurple,
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 18
                                             ),
@@ -345,7 +345,7 @@ class pemesananview extends StatelessWidget {
                                               "Kirim",
                                               style: TextStyle(color: Colors.white),
                                             ),
-                                            color: Colors.blue,
+                                            color: Colors.deepPurple,
 
                                             onPressed: () async {
                                               if (formKey.currentState!.validate()) {
@@ -369,12 +369,12 @@ class pemesananview extends StatelessWidget {
                                                         child: Text(
                                                           'Close',
                                                           style: TextStyle(
-                                                            color: Colors.blue,
+                                                            color: Colors.deepPurple,
                                                             fontWeight: FontWeight.bold,
                                                           ),
                                                         ),
                                                         onPressed: () {
-                                                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: riwayatpemesanan(user: user,)));
+                                                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: daftarmenu(user: user,)));
                                                         },
                                                       ),
                                                     ],
@@ -407,7 +407,7 @@ class pemesananview extends StatelessWidget {
                                           title: Text(
                                             'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
                                             style: TextStyle(
-                                                color: Colors.blue,
+                                                color: Colors.deepPurple,
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 18
                                             ),
@@ -466,7 +466,7 @@ class pemesananview extends StatelessWidget {
                                               "Kirim",
                                               style: TextStyle(color: Colors.white),
                                             ),
-                                            color: Colors.blue,
+                                            color: Colors.deepPurple,
 
                                             onPressed: () async {
                                               if (formKey.currentState!.validate()) {
@@ -490,7 +490,7 @@ class pemesananview extends StatelessWidget {
                                                         child: Text(
                                                           'Close',
                                                           style: TextStyle(
-                                                            color: Colors.blue,
+                                                            color: Colors.deepPurple,
                                                             fontWeight: FontWeight.bold,
                                                           ),
                                                         ),

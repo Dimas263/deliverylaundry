@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class tentangkami extends StatelessWidget {
@@ -26,36 +27,61 @@ class tentangkami extends StatelessWidget {
         ),
         child: Container(
           margin: const EdgeInsets.only(left: 25,right: 25, top: 25, bottom: 25),
-          child: Card(
-            elevation: 5,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  margin: const EdgeInsets.only(left: 15,right: 15, top: 15, bottom: 5),
-                  child: Text(
-                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+          child: SingleChildScrollView(
+            child: Card(
+              elevation: 5,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(left: 15,right: 15, top: 15, bottom: 5),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 100,
+                      child: Image.asset('file/logo.png', fit: BoxFit.contain,),
                     ),
-                    textAlign: TextAlign.justify,
                   ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(left: 15,right: 15, top: 15, bottom: 5),
-                  child: Text(
-                    'test',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                  Container(
+                    margin: const EdgeInsets.only(left: 15,right: 15, top: 15, bottom: 5),
+                    child: Text(
+                      'Delivery Loundry adalah usaha laundry melayani cucian rumah tangga, karpet, boneka, gordyn, bed cover, dan lain-lain. Hubungi kami untuk memesan laundry, cucian berkualitas, wangi dan bersih, harga murah, hasilnya puas. ',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
-                    textAlign: TextAlign.justify,
                   ),
-                ),
-              ],
+                  Container(
+                    margin: const EdgeInsets.only(left: 15,right: 15, top: 15, bottom: 5),
+                    child: Text(
+                      'Dikembangan Oleh',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(left: 15,right: 15, top: 5, bottom: 5),
+                    child: Text(
+                      'Dimas & Brigita',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(left: 15,right: 15, top: 25, bottom: 25),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
