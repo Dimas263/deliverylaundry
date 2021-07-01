@@ -279,113 +279,115 @@ class pemesananview extends StatelessWidget {
                                   return AlertDialog(
                                     // Retrieve the text the that user has entered by using the
                                     // TextEditingController.
-                                    content: Column(
-                                      children: [
+                                    content: SingleChildScrollView(
+                                      child: Column(
+                                        children: [
 
-                                        ListTile(
-                                          title: Text(
-                                            'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
-                                            style: TextStyle(
-                                                color: Colors.deepPurple,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18
+                                          ListTile(
+                                            title: Text(
+                                              'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
+                                              style: TextStyle(
+                                                  color: Colors.deepPurple,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18
+                                              ),
+                                              textAlign: TextAlign.center,
                                             ),
-                                            textAlign: TextAlign.center,
                                           ),
-                                        ),
 
-                                        ListTile(
-                                          leading : Text('Jumlah Barang'),
-                                          title: Text(':'),
-                                          trailing: Text(total_barang.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Total Berat Barang'),
-                                          title: Text(':'),
-                                          trailing: Text(total_berat.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Tanggal Diambil'),
-                                          title: Text(':'),
-                                          trailing: Text(tgl_ambil.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Lokasi Pengambilan'),
-                                          title: Text(':'),
-                                          trailing: Text(alamat.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Tanggal Diantar'),
-                                          title: Text(':'),
-                                          trailing: Text(tgl_antar.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Catatan'),
-                                          title: Text(':'),
-                                          trailing: Text(catatan.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Estimasi'),
-                                          title: Text(':'),
-                                          trailing: Text('$estimasi' + ' hari'),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Biaya'),
-                                          title: Text(':'),
-                                          trailing: Text('Rp.' + '$biaya'),
-                                        ),
+                                          ListTile(
+                                            leading : Text('Jumlah Barang'),
+                                            title: Text(':'),
+                                            trailing: Text(total_barang.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Total Berat Barang'),
+                                            title: Text(':'),
+                                            trailing: Text(total_berat.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Tanggal Diambil'),
+                                            title: Text(':'),
+                                            trailing: Text(tgl_ambil.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Lokasi Pengambilan'),
+                                            title: Text(':'),
+                                            trailing: Text(alamat.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Tanggal Diantar'),
+                                            title: Text(':'),
+                                            trailing: Text(tgl_antar.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Catatan'),
+                                            title: Text(':'),
+                                            trailing: Text(catatan.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Estimasi'),
+                                            title: Text(':'),
+                                            trailing: Text('$estimasi' + ' hari'),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Biaya'),
+                                            title: Text(':'),
+                                            trailing: Text('Rp.' + '$biaya'),
+                                          ),
 
 
-                                        ListTile(
-                                          title: RaisedButton(
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(15.0),
-                                            ),
-                                            child: Text(
-                                              "Kirim",
-                                              style: TextStyle(color: Colors.white),
-                                            ),
-                                            color: Colors.deepPurple,
+                                          ListTile(
+                                            title: RaisedButton(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.circular(15.0),
+                                              ),
+                                              child: Text(
+                                                "Kirim",
+                                                style: TextStyle(color: Colors.white),
+                                              ),
+                                              color: Colors.deepPurple,
 
-                                            onPressed: () async {
-                                              if (formKey.currentState!.validate()) {
+                                              onPressed: () async {
+                                                if (formKey.currentState!.validate()) {
 
-                                                await Database.addItem(
-                                                  alamat: alamat.text,
-                                                  catatan: catatan.text,
-                                                  tgl_ambil: tgl_ambil.text,
-                                                  tgl_antar: tgl_antar.text,
-                                                  total_barang: total_barang.text,
-                                                  total_berat: total_berat.text,
-                                                  estimasi: '$estimasi',
-                                                  biaya: '$biaya',
-                                                );
-                                                showDialog(
-                                                  context: context,
-                                                  builder: (context) => new AlertDialog(
-                                                    title: Text('Pemesanan loundry berhasil dibuat, tunggu beberapa saat kami akan menghubungi anda segera'),
-                                                    actions: [
-                                                      TextButton(
-                                                        child: Text(
-                                                          'Close',
-                                                          style: TextStyle(
-                                                            color: Colors.deepPurple,
-                                                            fontWeight: FontWeight.bold,
+                                                  await Database.addItem(
+                                                    alamat: alamat.text,
+                                                    catatan: catatan.text,
+                                                    tgl_ambil: tgl_ambil.text,
+                                                    tgl_antar: tgl_antar.text,
+                                                    total_barang: total_barang.text,
+                                                    total_berat: total_berat.text,
+                                                    estimasi: '$estimasi',
+                                                    biaya: '$biaya',
+                                                  );
+                                                  showDialog(
+                                                    context: context,
+                                                    builder: (context) => new AlertDialog(
+                                                      title: Text('Pemesanan loundry berhasil dibuat, tunggu beberapa saat kami akan menghubungi anda segera'),
+                                                      actions: [
+                                                        TextButton(
+                                                          child: Text(
+                                                            'Close',
+                                                            style: TextStyle(
+                                                              color: Colors.deepPurple,
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
                                                           ),
+                                                          onPressed: () {
+                                                            Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: daftarmenu(user: user,)));
+                                                          },
                                                         ),
-                                                        onPressed: () {
-                                                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: daftarmenu(user: user,)));
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                );
-                                              }
-                                            },
+                                                      ],
+                                                    ),
+                                                  );
+                                                }
+                                              },
+                                            ),
                                           ),
-                                        ),
 
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   );
                                 },
@@ -400,113 +402,115 @@ class pemesananview extends StatelessWidget {
                                   return AlertDialog(
                                     // Retrieve the text the that user has entered by using the
                                     // TextEditingController.
-                                    content: Column(
-                                      children: [
+                                    content: SingleChildScrollView(
+                                      child: Column(
+                                        children: [
 
-                                        ListTile(
-                                          title: Text(
-                                            'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
-                                            style: TextStyle(
-                                                color: Colors.deepPurple,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18
+                                          ListTile(
+                                            title: Text(
+                                              'Terimakasih sudah menggunakan jasa kami. Berikut riwayat pemesanan anda',
+                                              style: TextStyle(
+                                                  color: Colors.deepPurple,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18
+                                              ),
+                                              textAlign: TextAlign.center,
                                             ),
-                                            textAlign: TextAlign.center,
                                           ),
-                                        ),
 
-                                        ListTile(
-                                          leading : Text('Jumlah Barang'),
-                                          title: Text(':'),
-                                          trailing: Text(total_barang.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Total Berat Barang'),
-                                          title: Text(':'),
-                                          trailing: Text(total_berat.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Tanggal Diambil'),
-                                          title: Text(':'),
-                                          trailing: Text(tgl_ambil.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Lokasi Pengambilan'),
-                                          title: Text(':'),
-                                          trailing: Text(alamat.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Tanggal Diantar'),
-                                          title: Text(':'),
-                                          trailing: Text(tgl_antar.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Catatan'),
-                                          title: Text(':'),
-                                          trailing: Text(catatan.text),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Estimasi'),
-                                          title: Text(':'),
-                                          trailing: Text('$estimasi' + ' hari'),
-                                        ),
-                                        ListTile(
-                                          leading : Text('Biaya'),
-                                          title: Text(':'),
-                                          trailing: Text('Rp.' + '$biaya'),
-                                        ),
+                                          ListTile(
+                                            leading : Text('Jumlah Barang'),
+                                            title: Text(':'),
+                                            trailing: Text(total_barang.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Total Berat Barang'),
+                                            title: Text(':'),
+                                            trailing: Text(total_berat.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Tanggal Diambil'),
+                                            title: Text(':'),
+                                            trailing: Text(tgl_ambil.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Lokasi Pengambilan'),
+                                            title: Text(':'),
+                                            trailing: Text(alamat.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Tanggal Diantar'),
+                                            title: Text(':'),
+                                            trailing: Text(tgl_antar.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Catatan'),
+                                            title: Text(':'),
+                                            trailing: Text(catatan.text),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Estimasi'),
+                                            title: Text(':'),
+                                            trailing: Text('$estimasi' + ' hari'),
+                                          ),
+                                          ListTile(
+                                            leading : Text('Biaya'),
+                                            title: Text(':'),
+                                            trailing: Text('Rp.' + '$biaya'),
+                                          ),
 
 
-                                        ListTile(
-                                          title: RaisedButton(
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(15.0),
-                                            ),
-                                            child: Text(
-                                              "Kirim",
-                                              style: TextStyle(color: Colors.white),
-                                            ),
-                                            color: Colors.deepPurple,
+                                          ListTile(
+                                            title: RaisedButton(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.circular(15.0),
+                                              ),
+                                              child: Text(
+                                                "Kirim",
+                                                style: TextStyle(color: Colors.white),
+                                              ),
+                                              color: Colors.deepPurple,
 
-                                            onPressed: () async {
-                                              if (formKey.currentState!.validate()) {
+                                              onPressed: () async {
+                                                if (formKey.currentState!.validate()) {
 
-                                                await Database.addItem(
-                                                  alamat: alamat.text,
-                                                  catatan: catatan.text,
-                                                  tgl_ambil: tgl_ambil.text,
-                                                  tgl_antar: tgl_antar.text,
-                                                  total_barang: total_barang.text,
-                                                  total_berat: total_berat.text,
-                                                  estimasi: '$estimasi',
-                                                  biaya: '$biaya',
-                                                );
-                                                showDialog(
-                                                  context: context,
-                                                  builder: (context) => new AlertDialog(
-                                                    title: Text('Pemesanan loundry berhasil dibuat, tunggu beberapa saat kami akan menghubungi anda segera'),
-                                                    actions: [
-                                                      TextButton(
-                                                        child: Text(
-                                                          'Close',
-                                                          style: TextStyle(
-                                                            color: Colors.deepPurple,
-                                                            fontWeight: FontWeight.bold,
+                                                  await Database.addItem(
+                                                    alamat: alamat.text,
+                                                    catatan: catatan.text,
+                                                    tgl_ambil: tgl_ambil.text,
+                                                    tgl_antar: tgl_antar.text,
+                                                    total_barang: total_barang.text,
+                                                    total_berat: total_berat.text,
+                                                    estimasi: '$estimasi',
+                                                    biaya: '$biaya',
+                                                  );
+                                                  showDialog(
+                                                    context: context,
+                                                    builder: (context) => new AlertDialog(
+                                                      title: Text('Pemesanan loundry berhasil dibuat, tunggu beberapa saat kami akan menghubungi anda segera'),
+                                                      actions: [
+                                                        TextButton(
+                                                          child: Text(
+                                                            'Close',
+                                                            style: TextStyle(
+                                                              color: Colors.deepPurple,
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
                                                           ),
+                                                          onPressed: () {
+                                                            Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: daftarmenu(user: user,)));
+                                                          },
                                                         ),
-                                                        onPressed: () {
-                                                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, duration: Duration(seconds: 1), child: daftarmenu(user: user,)));
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                );
-                                              }
-                                            },
+                                                      ],
+                                                    ),
+                                                  );
+                                                }
+                                              },
+                                            ),
                                           ),
-                                        ),
 
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   );
                                 },

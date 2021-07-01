@@ -77,6 +77,8 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
                     var id = snapshot.data!.docs[index].id;
                     String documentid = id;
 
+                    var no_pesanan = documentid.substring(documentid.length - 4);
+
                     //Todo: Info Pesanan
                     var noteInfo = snapshot.data!.docs[index].data();
                     String alamat = noteInfo['alamat'];
@@ -105,7 +107,7 @@ class _riwayatpemesananState extends State<riwayatpemesanan> {
                             ),
                             title: Text(':'),
                             trailing: Text(
-                              documentid,
+                              no_pesanan,
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
