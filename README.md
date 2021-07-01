@@ -2,6 +2,7 @@
 
 Aplikasi Delivery Laundry berbasis Android menggunakan Flutter dan Firebase Database
 
+
 Delivery Loundry adalah usaha loundry melayani cucian rumah tangga, karpet, boneka, gordyn, bed cover, dan lain-lain. Hubungi kami untuk memesan laundry, cucian berkualitas, wangi dan bersih, harga murah, hasilnya puas.
 
 ## Developer
