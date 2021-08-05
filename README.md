@@ -24,11 +24,3 @@ Delivery Loundry adalah usaha loundry melayani cucian rumah tangga, karpet, bone
 
 ## Download Aplikasi
 [Download Aplikasi Delivery Laundry](https://github.com/Dimas263/deliverylaundry/blob/master/deliverylaundry.apk)
-
-## Flutter
-
-Aplikasi ini kami buat dengan menggunakan Flutter
-
-- [Cara membuat aplikasi Flutter](https://flutter.dev/docs/get-started/codelab)
-- [Contoh project Flutter](https://flutter.dev/docs/cookbook)
-- [online documentation](https://flutter.dev/docs)
