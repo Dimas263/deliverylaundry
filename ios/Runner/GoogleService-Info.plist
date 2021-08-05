@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>229324578442-pdnuvq1o4vqstiv2ks5p6ld6ugbgt8a0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.229324578442-pdnuvq1o4vqstiv2ks5p6ld6ugbgt8a0</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>229324578442-7vp7i4h5dutujkkje3j0c13sunu0qcm9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAl5diaT4-g1gOZLdDntymwpDEcp2HdSa4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>229324578442</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.deliverylaundry.deliverylaundry</string>
+	<key>PROJECT_ID</key>
+	<string>delivery-laundry-b3326</string>
+	<key>STORAGE_BUCKET</key>
+	<string>delivery-laundry-b3326.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:229324578442:ios:e794cff04b81e550465773</string>
+</dict>
+</plist>
