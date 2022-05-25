@@ -22,6 +22,7 @@ Delivery Loundry adalah usaha loundry melayani cucian rumah tangga, karpet, bone
 <img src="file/demo/6.jpg" alt="alt text" width="150"/>
 <img src="file/demo/7.jpg" alt="alt text" width="150"/>
 -->
+
 ## Download Aplikasi
 [Download Aplikasi Delivery Laundry](https://github.com/Dimas263/deliverylaundry/blob/master/deliverylaundry.apk)
 
