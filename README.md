@@ -1,4 +1,4 @@
-# Delivery Laundry
+# <img src="https://img.icons8.com/color/48/undefined/android-os.png"/> Delivery Laundry
 
 Aplikasi Delivery Laundry berbasis Android menggunakan Flutter dan Firebase Database
 
@@ -6,8 +6,9 @@ Aplikasi Delivery Laundry berbasis Android menggunakan Flutter dan Firebase Data
 Delivery Loundry adalah usaha loundry melayani cucian rumah tangga, karpet, boneka, gordyn, bed cover, dan lain-lain. Hubungi kami untuk memesan laundry, cucian berkualitas, wangi dan bersih, harga murah, hasilnya puas.
 
 ## Developer
-- [Dimas 263](https://github.com/Dimas263)
-- [Brigita Creator](https://github.com/brigittaps-creator)
+<img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/undefined/external-developer-coding-kiranshastry-lineal-color-kiranshastry.png"/> [Dimas 263](https://github.com/Dimas263)
+
+<img src="https://img.icons8.com/external-sbts2018-lineal-color-sbts2018/58/undefined/external-developer-women-profession-sbts2018-lineal-color-sbts2018.png"/>[Brigita Creator](https://github.com/brigittaps-creator)
 
 ## Aplikasi
 <img src="file/demo/deliveryloundry.gif" alt="alt text" width="200"/>
